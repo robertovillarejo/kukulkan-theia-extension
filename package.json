@@ -3,13 +3,15 @@
   "keywords": [
     "theia-extension"
   ],
-  "version": "0.0.0",
+  "version": "0.1.0",
   "files": [
     "lib",
     "src"
   ],
   "dependencies": {
-    "@theia/core": "latest"
+    "@theia/core": "latest",
+    "@theia/languages": "latest",
+    "@theia/monaco": "latest"
   },
   "devDependencies": {
     "rimraf": "latest",
