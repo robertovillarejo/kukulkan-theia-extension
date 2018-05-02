@@ -6,7 +6,8 @@
   "version": "0.1.0",
   "files": [
     "lib",
-    "src"
+    "src",
+    "build"
   ],
   "dependencies": {
     "@theia/core": "latest",
