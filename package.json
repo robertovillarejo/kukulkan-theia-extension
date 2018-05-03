@@ -10,9 +10,9 @@
     "build"
   ],
   "dependencies": {
-    "@theia/core": "latest",
-    "@theia/languages": "latest",
-    "@theia/monaco": "latest",
+    "@theia/core": "next",
+    "@theia/languages": "next",
+    "@theia/monaco": "next",
     "node-wget": "0.4.2"
   },
   "devDependencies": {
