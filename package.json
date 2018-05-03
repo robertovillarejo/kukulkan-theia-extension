@@ -11,7 +11,8 @@
   "dependencies": {
     "@theia/core": "latest",
     "@theia/languages": "latest",
-    "@theia/monaco": "latest"
+    "@theia/monaco": "latest",
+    "node-wget": "0.4.2"
   },
   "devDependencies": {
     "rimraf": "latest",
@@ -19,8 +20,9 @@
   },
   "scripts": {
     "prepare": "yarn run clean && yarn run build",
+    "copy-ls": "wget https://github.com/robertovillarejo/kukulkan-grammar/releases/download/v0.0.1/mx.infotec.dads.kukulkan-1.0.0-SNAPSHOT.jar -d ./build/dsl-ls.jar",
     "clean": "rimraf lib",
-    "build": "tsc",
+    "build": "tsc && yarn run copy-ls",
     "watch": "tsc -w"
   },
   "theiaExtensions": [
